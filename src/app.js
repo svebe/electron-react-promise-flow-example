@@ -48,7 +48,7 @@ let errorMessage: ?ErrorMessage;
 
 class Menu extends React.Component<{}> {
   render() {
-    let signedInUser = userService.getSignedInUser();
+    let signedInUser = Service.getSignedInUser();
     if(signedInUser) {
       return (
         <div>
